@@ -16,9 +16,7 @@ p {
 body {
   width: 100%;
   font-family: 'Times New Roman', Times, serif;
-  background: url(./img/bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
 }
 
 /* Olaf CSS */
@@ -27,7 +25,7 @@ body {
   width: 254px;
   height: 286px;
   position: relative;
-  top: 250px;
+  top: 320px;
   margin: 50px auto;
   animation: 얼굴흔들 1s infinite alternate;
 }
@@ -41,7 +39,7 @@ body {
 .face {
   width: 254px;
   height: 286px;
-  filter: blur(0.7px) drop-shadow(0px 4px 4px rgba(0, 118, 134, 0.25));
+  filter: blur(0.5px) drop-shadow(0px 4px 4px rgba(31, 31, 31, 0.218));
   animation: 얼굴흔들 2s infinite alternate;
 }
 
@@ -334,18 +332,19 @@ body {
   display: block;
   position: absolute;
   width: 600px;
-  top: 30px;
+  top: 120px;
   left: 50%;
   transform: translate(-50%);
   z-index: -1;
-  opacity: 90%;
+  opacity: 50%;
   animation: 스노우볼 1s infinite alternate;
+  filter: blur(0.5px);
 }
 
 /* 말풍선  */
 .wrapper-talk {
   margin-top: 100px;
-  transform: translateY(60%);
+  transform: translate(-20%,60%);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -362,6 +361,7 @@ body {
   font-size: 20px;
   letter-spacing: -0.085em;
   right: 100px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.25));
 }
 
 /* 말풍선꼭지  */
