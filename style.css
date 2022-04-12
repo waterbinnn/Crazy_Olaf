@@ -14,7 +14,8 @@ p {
 
 /* layout */
 body {
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   font-family: 'Times New Roman', Times, serif;
   background-color: rgb(255, 255, 255);
 }
@@ -450,4 +451,26 @@ body {
     transform: translate(-51%,1px);
 
   }
+}
+
+@media ( max-width: 768px ) {
+  .talk {
+    padding: 9px 15px;
+    font-size: 12px;
+    letter-spacing: -0.065em;
+    margin-top: 20px;
+  }
+
+  .wrapper-talk {
+    margin-top: 10px;
+    transform: translate(10%,70%);
+  }
+  .snowball {
+    width: 380px;
+    left: 55%;
+  }
+  .olaf {
+    top: 250px;
+  }
+
 }
