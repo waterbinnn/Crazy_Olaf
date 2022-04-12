@@ -1,10 +1,9 @@
 # 소원을 이루어 주는 올라프 ⛄️ 🔮
 
-<img width="500" alt="스크린샷 2022-04-12 오후 10 36 24" src="https://user-images.githubusercontent.com/96714788/162974987-839ba8bd-f42a-4d0d-bfea-6b79a3b613af.png">
 
 
 ↓ (to page) <br>
-https://waterbinnn.github.io/Making_Character/
+
 
 뭐라고요? 코딩왕이 되는게 소원이라구요 ? <br>
 잠을 안자도 피곤하지 않았으면 한다고요??
