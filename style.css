@@ -14,21 +14,24 @@ p {
 
 /* layout */
 body {
-  width: 100vw;
-  height: 100vh;
   font-family: 'Times New Roman', Times, serif;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
+}
+
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
 }
 
 /* Olaf CSS */
 
 .olaf {
   width: 254px;
-  height: 286px;
   position: relative;
-  top: 320px;
-  margin: 50px auto;
+  top: 350px;
+  margin: 0px auto;
   animation: 얼굴흔들 1s infinite alternate;
+  transform: translate(-50%,50%);
 }
 
 .olaf:hover {
@@ -38,7 +41,6 @@ body {
 /* face shape */
 
 .face {
-  width: 254px;
   height: 286px;
   filter: blur(0.5px) drop-shadow(0px 4px 4px rgba(31, 31, 31, 0.218));
   animation: 얼굴흔들 2s infinite alternate;
@@ -154,7 +156,7 @@ body {
   position: absolute;
   top: -15px;
   left: 80px;
-  width: 113px;
+  width: 115px;
   height: 36px;
   background-color: #fff;
 }
@@ -335,7 +337,7 @@ body {
   width: 600px;
   top: 120px;
   left: 50%;
-  transform: translate(-50%);
+  /* transform: translate(-50%); */
   z-index: -1;
   opacity: 50%;
   animation: 스노우볼 1s infinite alternate;
@@ -344,8 +346,8 @@ body {
 
 /* 말풍선  */
 .wrapper-talk {
-  margin-top: 100px;
-  transform: translate(-20%,60%);
+  margin-top: 250px;
+  /* transform: translate(-20%,60%); */
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -451,26 +453,4 @@ body {
     transform: translate(-51%,1px);
 
   }
-}
-
-@media ( max-width: 768px ) {
-  .talk {
-    padding: 9px 15px;
-    font-size: 12px;
-    letter-spacing: -0.065em;
-    margin-top: 20px;
-  }
-
-  .wrapper-talk {
-    margin-top: 10px;
-    transform: translate(10%,70%);
-  }
-  .snowball {
-    width: 380px;
-    left: 55%;
-  }
-  .olaf {
-    top: 250px;
-  }
-
 }
