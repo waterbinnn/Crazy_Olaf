@@ -14,12 +14,22 @@ p {
 
 /* layout */
 body {
+  width: 100%;
   font-family: 'Times New Roman', Times, serif;
-  background-color: white;
+  background-color: rgb(22, 22, 22);
+}
+
+.img-wrapper {
+  position: absolute;
+  top: 15%;
+  left: 8%;
 }
 
 .wrapper {
-  width: 600px;
+  width: 700px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
   margin: 0 auto;
 }
 
@@ -31,7 +41,7 @@ body {
   top: 350px;
   margin: 0px auto;
   animation: 얼굴흔들 1s infinite alternate;
-  transform: translate(-50%,50%);
+  transform: translate(-50%, 50%);
 }
 
 .olaf:hover {
@@ -120,7 +130,6 @@ body {
   height: 93px;
   border: 4px solid #323232;
   border-radius: 50%;
-  filter: drop-shadow(0px 4px 4px rgba(255, 32, 32, 0.293));
 }
 
 .mouthHider {
@@ -331,23 +340,31 @@ body {
 }
 
 /* 배경 추가요소  */
-.snowball {
+.ball {
   display: block;
   position: absolute;
-  width: 600px;
-  top: 120px;
+  top: 50%;
   left: 50%;
-  /* transform: translate(-50%); */
-  z-index: -1;
-  opacity: 50%;
-  animation: 스노우볼 1s infinite alternate;
-  filter: blur(0.5px);
+  width: 600px;
+  opacity: 70%;
+}
+
+.ball {
+  animation: 볼움직임 30s linear infinite;
+}
+
+.effect {
+  position: absolute;
+  width: 1000px;
+  top: 50%;
+  left: 0%;
+  opacity: 30%;
+  transform: translate(-18%, -21%);
 }
 
 /* 말풍선  */
 .wrapper-talk {
-  margin-top: 250px;
-  /* transform: translate(-20%,60%); */
+  margin: 250px 0 0 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -360,7 +377,7 @@ body {
   border-radius: 4px;
   text-align: center;
   color: #ffff;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
   letter-spacing: -0.085em;
   right: 100px;
@@ -391,9 +408,11 @@ body {
   0% {
     transform: translate(-1px, 0px) scale(0.9) rotate(0deg);
   }
+
   50% {
     transform: translate(0px, 0px);
   }
+
   100% {
     transform: translate(1px, -3px) scale(0.98) rotate(3deg);
   }
@@ -403,6 +422,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -412,6 +432,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(5deg);
   }
@@ -421,6 +442,7 @@ body {
   from {
     transform: rotate(5deg);
   }
+
   to {
     transform: rotate(0deg);
   }
@@ -430,6 +452,7 @@ body {
   from {
     transform: scale(1) rotate(0deg);
   }
+
   to {
     transform: scale(1.2) rotate(20deg);
   }
@@ -445,12 +468,19 @@ body {
   }
 }
 
-@keyframes 스노우볼 {
-  from {
-    transform: translate(-50%,-1px);
+@keyframes 볼움직임 {
+  100% {
+    transform: rotate(3600deg);
   }
-  to{
-    transform: translate(-51%,1px);
+}
 
+@media (max-width: 768px) {
+  .wrapper-talk {
+    margin-top: 270px;
+  }
+
+  .talk {
+    font-size: 16px;
+    font-weight: 400;
   }
 }
