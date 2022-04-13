@@ -15,22 +15,17 @@ p {
 /* layout */
 body {
   width: 100%;
+  height: 100vh;
   font-family:'Noto Sans KR','Times New Roman', Times,serif;
   background-color: rgb(22, 22, 22);
 }
 
-.img-wrapper {
-  position: absolute;
-  top: 15%;
-  left: 8%;
-}
 
 .wrapper {
-  width: 700px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Olaf CSS */
@@ -340,31 +335,33 @@ body {
 }
 
 /* 배경 추가요소  */
-.ball {
+
+.img-wrapper {
   display: block;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  transform: translateY(5%);
+}
+
+.ball {
+  display: block;
   width: 600px;
   opacity: 70%;
 }
 
 .ball {
-  animation: 볼움직임 30s linear infinite;
+  animation: 볼움직임 50s linear infinite;
 }
 
 .effect {
   position: absolute;
-  width: 1000px;
-  top: 50%;
-  left: 0%;
   opacity: 30%;
-  transform: translate(-18%, -21%);
+  top: -35%;
+  left: -31%;
 }
 
 /* 말풍선  */
 .wrapper-talk {
-  margin: 250px 0 0 20px;
+  margin: 244px 0 0 147px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
