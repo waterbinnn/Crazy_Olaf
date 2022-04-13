@@ -8,6 +8,7 @@
 ↓ (To page) <br>
 https://waterbinnn.github.io/character-contest/
 
+## 컨셉 
 뭐라고요? 코딩왕이 되는게 소원이라구요 ? <br>
 잠을 안자도 피곤하지 않았으면 한다고요??
 
