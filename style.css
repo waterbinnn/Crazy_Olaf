@@ -397,6 +397,51 @@ body {
 .talk {
   margin-top: 30px;
 }
+.talk.input {
+  width: 400px;
+  padding: 13px 20px;
+  background-color: rgba(87, 86, 85, 0.478);
+  border: none;
+  text-align: left;
+}
+.input::placeholder {
+  color: #e9ebbb;
+  font-size: 14px;
+  font-weight: 400;
+}
+.wish {
+  position: relative;
+}
+
+.wish-btn{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 20%;
+  background-color: unset;
+  cursor: pointer;
+  margin-left: 30%;
+  transition: all .5s;
+}
+.wish-btn:after {
+  content: '복채';
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  font-size: 12px;
+  color: rgb(212, 212, 212);
+}
+
+.wish-btn:hover {
+  font-size: 50px;
+  top: 10px;
+}
+
+
 
 
 /* animations  */
