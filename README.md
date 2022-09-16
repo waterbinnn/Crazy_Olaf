@@ -1,7 +1,5 @@
 # 소원을 이루어 주는 올라프 ⛄️ 🔮
 
-멋쟁이 사자처럼 캐릭터 경진대회 출품작 
-
 <img width="612" alt="스크린샷 2022-04-14 오후 4 45 13" src="https://user-images.githubusercontent.com/96714788/163338697-72e64a25-9f02-4e86-889c-d990a8aefbc3.png">
 
 
